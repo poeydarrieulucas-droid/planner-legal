@@ -1,110 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Planner Legal</title>
-    <style>
-      :root {
-        --bg: #f5f7fb;
-        --card: #ffffff;
-        --primary: #1d4ed8;
-        --text: #111827;
-        --muted: #4b5563;
-        --border: #e5e7eb;
-      }
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planner</title>
+<meta name="description" content="Planner, application personnelle d'organisation : emploi du temps, tâches, objectifs et repas.">
+<style>
+:root{--bg:#fafaf8;--fg:#1f1f1d;--muted:#5f5e5a;--accent:#3c3489;--line:#d3d1c7}
+@media (prefers-color-scheme:dark){:root{--bg:#161615;--fg:#ecebe6;--muted:#a8a69e;--accent:#afa9ec;--line:#3a3a37}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:48px 16px}
+h1{font-size:2rem;margin:0 0 8px}
+h2{font-size:1.15rem;margin:32px 0 8px}
+p,li{color:var(--fg)}
+.lead{color:var(--muted);font-size:1.1rem;margin:0 0 24px}
+a{color:var(--accent)}
+footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+footer a{margin-right:16px}
+</style>
+</head>
+<body>
+<main>
+<h1>Planner</h1>
+<p class="lead">Application personnelle d'organisation, développée pour un usage privé.</p>
 
-      * { box-sizing: border-box; }
+<h2>Ce que fait l'application</h2>
+<ul>
+<li>Lit l'emploi du temps présent dans Google Agenda pour repérer les créneaux libres.</li>
+<li>Planifie automatiquement les tâches (devoirs, projets) en fonction de leur durée estimée et de leur date limite.</li>
+<li>Répartit des objectifs récurrents (lecture, apprentissage, loisirs) dans la semaine.</li>
+<li>Écrit les créneaux planifiés dans un agenda Google dédié, créé par l'application.</li>
+<li>Envoie des rappels avant les échéances et propose des tâches adaptées au temps libre disponible.</li>
+<li>Suggère des repas simples pour la semaine à partir des aliments disponibles, avec une liste de courses.</li>
+</ul>
 
-      body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background: var(--bg);
-        color: var(--text);
-        line-height: 1.6;
-      }
+<h2>Accès aux données Google</h2>
+<p>L'application demande l'accès à Google Agenda uniquement pour lire les créneaux occupés et gérer son propre agenda de planification. Le détail de l'utilisation des données est décrit dans la politique de confidentialité.</p>
 
-      .container {
-        max-width: 900px;
-        margin: 60px auto;
-        padding: 32px 24px;
-      }
-
-      .card {
-        background: var(--card);
-        border: 1px solid var(--border);
-        border-radius: 16px;
-        box-shadow: 0 10px 28px rgba(17, 24, 39, 0.05);
-        padding: 32px;
-      }
-
-      h1 {
-        margin-top: 0;
-        font-size: clamp(2rem, 4vw, 3rem);
-      }
-
-      .tag {
-        display: inline-block;
-        background: rgba(29, 78, 216, 0.08);
-        color: var(--primary);
-        font-weight: 700;
-        border-radius: 999px;
-        padding: 8px 12px;
-        margin-bottom: 16px;
-      }
-
-      p {
-        color: var(--muted);
-        font-size: 1.06rem;
-      }
-
-      .links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 12px;
-        margin-top: 24px;
-      }
-
-      a {
-        color: var(--primary);
-        text-decoration: none;
-        font-weight: 700;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-
-      .button {
-        display: inline-block;
-        background: var(--primary);
-        color: #fff;
-        padding: 12px 18px;
-        border-radius: 10px;
-      }
-
-      .button.secondary {
-        background: transparent;
-        color: var(--primary);
-        border: 1px solid var(--border);
-      }
-    </style>
-  </head>
-  <body>
-    <main class="container">
-      <section class="card">
-        <div class="tag">Application</div>
-        <h1>Planner Legal</h1>
-        <p>
-          Planner Legal aide les professionnels à organiser les tâches, les échéances et
-          les documents juridiques avec plus de clarté et de sérénité.
-        </p>
-
-        <div class="links">
-          <a class="button" href="privacy.html">Politique de confidentialité</a>
-          <a class="button secondary" href="terms.html">Conditions générales</a>
-        </div>
-      </section>
-    </main>
-  </body>
+<footer>
+<a href="privacy.html">Politique de confidentialité</a>
+<a href="terms.html">Conditions d'utilisation</a>
+</footer>
+</main>
+</body>
 </html>
