@@ -1,97 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Politique de confidentialité - Planner Legal</title>
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0;
-        background: #f5f7fb;
-        color: #111827;
-        line-height: 1.7;
-      }
-      .wrap {
-        max-width: 900px;
-        margin: 40px auto;
-        padding: 0 20px 48px;
-      }
-      .card {
-        background: #fff;
-        border: 1px solid #e5e7eb;
-        border-radius: 16px;
-        padding: 32px;
-        box-shadow: 0 10px 28px rgba(17, 24, 39, 0.05);
-      }
-      h1, h2 {
-        color: #111827;
-      }
-      p, li {
-        color: #374151;
-      }
-      a {
-        color: #1d4ed8;
-        text-decoration: none;
-        font-weight: 700;
-      }
-      a:hover { text-decoration: underline; }
-      .back {
-        display: inline-block;
-        margin-bottom: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="wrap">
-      <a class="back" href="index.html">← Retour à l'accueil</a>
-      <div class="card">
-        <h1>Politique de confidentialité</h1>
-        <p>
-          La présente politique de confidentialité décrit comment Planner Legal collecte,
-          utilise et protège les informations personnelles que vous fournissez lors de
-          l'utilisation de nos services.
-        </p>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planner, confidentialité</title>
+<style>
+:root{--bg:#fafaf8;--fg:#1f1f1d;--muted:#5f5e5a;--accent:#3c3489;--line:#d3d1c7}
+@media (prefers-color-scheme:dark){:root{--bg:#161615;--fg:#ecebe6;--muted:#a8a69e;--accent:#afa9ec;--line:#3a3a37}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:48px 16px}
+h1{font-size:1.8rem;margin:0 0 4px}
+h2{font-size:1.15rem;margin:32px 0 8px}
+.meta{color:var(--muted);margin:0 0 24px}
+a{color:var(--accent)}
+footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+footer a{margin-right:16px}
+</style>
+</head>
+<body>
+<main>
+<h1>Politique de confidentialité</h1>
+<p class="meta">Application Planner · Dernière mise à jour : 22 octobre 2026</p>
 
-        <h2>1. Données collectées</h2>
-        <p>
-          Nous pouvons collecter des informations telles que votre adresse e-mail, votre
-          nom, les préférences de configuration de l'application et les données techniques
-          nécessaires au bon fonctionnement du service.
-        </p>
+<h2>1. Objet</h2>
+<p>Planner est une application personnelle d'organisation, développée et utilisée à titre privé. Cette page décrit quelles données l'application collecte, comment elle les utilise, où elle les stocke et avec qui elle les partage.</p>
 
-        <h2>2. Utilisation des informations</h2>
-        <p>
-          Les informations collectées sont utilisées pour fournir, améliorer et sécuriser
-          les services, traiter les demandes de support et communiquer avec vous concernant
-          l'application.
-        </p>
+<h2>2. Données Google consultées</h2>
+<p>Avec l'autorisation explicite de l'utilisateur, via la connexion Google (OAuth), l'application accède :</p>
+<ul>
+<li>à l'adresse e-mail du compte Google, pour identifier l'utilisateur ;</li>
+<li>aux événements de Google Agenda : dates, heures de début et de fin, titre, pour calculer les créneaux libres et afficher l'emploi du temps ;</li>
+<li>à un agenda dédié créé par l'application, dans lequel elle crée, modifie et supprime les créneaux qu'elle a planifiés.</li>
+</ul>
+<p>L'application ne modifie ni ne supprime aucun événement en dehors de l'agenda qu'elle a elle-même créé.</p>
 
-        <h2>3. Protection des données</h2>
-        <p>
-          Nous mettons en place des mesures raisonnables pour protéger vos informations
-          contre tout accès, divulgation ou altération non autorisés.
-        </p>
+<h2>3. Autres données saisies par l'utilisateur</h2>
+<ul>
+<li>Tâches : intitulé, durée estimée, date limite.</li>
+<li>Objectifs récurrents : intitulé, durée cible, préférences horaires.</li>
+<li>Préférences alimentaires, stock d'aliments, listes de courses.</li>
+<li>Abonnement aux notifications de l'appareil, pour l'envoi des rappels.</li>
+</ul>
 
-        <h2>4. Partage des données</h2>
-        <p>
-          Nous ne vendons pas vos informations personnelles. Elles peuvent être partagées
-          uniquement avec des prestataires de services nécessaires au fonctionnement de
-          l'application, dans le respect de la réglementation applicable.
-        </p>
+<h2>4. Utilisation des données</h2>
+<p>Les données servent exclusivement à fournir les fonctionnalités de l'application : planification, rappels, suggestions et liste de courses. Elles ne sont ni vendues, ni utilisées à des fins publicitaires, ni utilisées pour entraîner des modèles d'intelligence artificielle par l'éditeur de l'application.</p>
 
-        <h2>5. Droits des utilisateurs</h2>
-        <p>
-          Vous pouvez demander l'accès, la rectification ou la suppression de vos données
-          personnelles en nous contactant via les moyens indiqués dans l'application.
-        </p>
+<h2>5. Stockage et sécurité</h2>
+<ul>
+<li>Les données sont stockées dans une base de données hébergée par Supabase, sur des serveurs situés à Londres (Royaume-Uni).</li>
+<li>Les jetons d'accès Google sont conservés côté serveur et ne sont jamais exposés dans l'interface.</li>
+<li>Les échanges sont chiffrés (HTTPS).</li>
+</ul>
 
-        <h2>6. Modifications</h2>
-        <p>
-          Cette politique peut être mise à jour à tout moment. Les modifications importantes
-          seront communiquées de manière adéquate.
-        </p>
-      </div>
-    </div>
-  </body>
+<h2>6. Partage avec des tiers</h2>
+<p>Pour l'assistant intégré, l'application envoie des requêtes à un fournisseur d'intelligence artificielle (Mistral AI ou Google Gemini). Ces requêtes contiennent uniquement : les tâches et objectifs saisis par l'utilisateur, ses demandes en langage naturel, et les plages horaires occupées ou libres.</p>
+<p><strong>Les titres, descriptions, lieux et participants des événements Google Agenda ne sont jamais transmis à un fournisseur d'intelligence artificielle.</strong></p>
+<p>Aucune autre donnée n'est partagée avec des tiers.</p>
+
+<h2>7. Respect des règles Google</h2>
+<p>L'utilisation et le transfert, par Planner, des informations reçues des API Google respectent les <a href="https://developers.google.com/terms/api-services-user-data-policy">règles relatives aux données utilisateur des services d'API Google</a>, y compris les exigences d'utilisation limitée.</p>
+<p lang="en">Planner's use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>8. Conservation et suppression</h2>
+<p>Les données sont conservées tant que le compte est utilisé. L'utilisateur peut à tout moment :</p>
+<ul>
+<li>révoquer l'accès de l'application depuis <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> ;</li>
+<li>demander la suppression complète de ses données en écrivant à l'adresse ci-dessous. La suppression intervient sous 30 jours.</li>
+</ul>
+
+<h2>9. Droits (RGPD)</h2>
+<p>Conformément au Règlement général sur la protection des données, l'utilisateur dispose d'un droit d'accès, de rectification, d'effacement et de portabilité de ses données. Il peut également introduire une réclamation auprès de la CNIL (<a href="https://www.cnil.fr">cnil.fr</a>).</p>
+
+<h2>10. Contact</h2>
+<p>poeydarrieu.lucas@gmail.com</p>
+
+<footer>
+<a href="index.html">Accueil</a>
+<a href="terms.html">Conditions d'utilisation</a>
+</footer>
+</main>
+</body>
 </html>
